@@ -55,14 +55,13 @@ public class main : MonoBehaviour
         yield return new WaitForSeconds(1);
         _text2.text = "1";
         yield return new WaitForSeconds(1);
-        
         SceneManager.LoadScene(1);
+       
     }
     void OyunSonu()
     {
         if (Input.GetKey(KeyCode.Tab) && _panelacikMi)
         {
-
             _panel1.SetActive(true);
         }
 
@@ -73,7 +72,6 @@ public class main : MonoBehaviour
     }
     public void YenidenOyna()
     {
-        
         StartCoroutine(OyunaBasla());
     }
 }
