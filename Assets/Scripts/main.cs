@@ -12,14 +12,13 @@ public class main : MonoBehaviour
     [SerializeField] Player2Control _player2Control;
     bool _panelacikMi = true;
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
     }
     void Update()
     {
-        if (Player1Controller.sayac1 + Player2Control._sayac2 == 15)
+        if (Player1Controller.sayac1 + Player2Control._sayac2 == 9)
         {
 
             _panelacikMi = false;
@@ -27,7 +26,6 @@ public class main : MonoBehaviour
             Player1Controller.sayac1 = 0;
         }
         OyunSonu();
-
     }
     public void panelac()
     {
@@ -48,7 +46,6 @@ public class main : MonoBehaviour
 
         panelac();
        
-
     }
     IEnumerator OyunaBasla()
     {
@@ -58,6 +55,7 @@ public class main : MonoBehaviour
         yield return new WaitForSeconds(1);
         _text2.text = "1";
         yield return new WaitForSeconds(1);
+        
         SceneManager.LoadScene(1);
     }
     void OyunSonu()
@@ -72,10 +70,10 @@ public class main : MonoBehaviour
         {
             _panel1.SetActive(false);
         }
-
     }
     public void YenidenOyna()
     {
+        
         StartCoroutine(OyunaBasla());
     }
 }

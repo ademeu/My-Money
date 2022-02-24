@@ -21,7 +21,7 @@ public class mainScript : MonoBehaviour
         }
         else
         {
-            _baslikText.text = "yanlıs! 'adem ertas' dene knk";
+            _baslikText.text = "yanlıs! 'adem ertas' dene";
         }
     }
     public void TextKontrol()

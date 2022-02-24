@@ -8,8 +8,6 @@ public class enemy : MonoBehaviour
     [SerializeField] SpriteRenderer _enemy1Sprite, _enemy2Sprite, _enemy3Sprite;
     bool _zipla;
    
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
@@ -21,22 +19,17 @@ public class enemy : MonoBehaviour
                 break;
             case "player2":
             
-
                 Destroy(this.gameObject);
 
                 break;
         }
     }
-
-
     private void Update()
     {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
             _zipla = true;
-
         }
         else
         {
