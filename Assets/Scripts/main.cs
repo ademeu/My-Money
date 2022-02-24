@@ -74,4 +74,9 @@ public class main : MonoBehaviour
     {
         StartCoroutine(OyunaBasla());
     }
+    public void OyundanCik()
+    {
+        Application.Quit();
+        Debug.Log("Cýkýs yapýldý");
+    }
 }

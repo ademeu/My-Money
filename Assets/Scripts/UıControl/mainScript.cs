@@ -21,7 +21,7 @@ public class mainScript : MonoBehaviour
         }
         else
         {
-            _baslikText.text = "yanlıs! 'adem ertas' dene";
+            _baslikText.text = "yanlıs! 'kullanici adi: adem, password: ertas";
         }
     }
     public void TextKontrol()
