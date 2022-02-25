@@ -10,11 +10,6 @@ public class Player1Controller : MonoBehaviour
     [SerializeField] SpriteRenderer _player1Sprite;
     public static int sayac1;
     public List<string> _list = new List<string>();
-    void Start()
-    {
-        
-    }
-
    
     void Update()
     {
