@@ -12,10 +12,6 @@ public class main : MonoBehaviour
     [SerializeField] Player2Control _player2Control;
     bool _panelacikMi = true;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-    }
     void Update()
     {
         if (Player1Controller.sayac1 + Player2Control._sayac2 == 9)
