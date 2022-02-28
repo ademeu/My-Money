@@ -43,7 +43,6 @@ public class Player1Controller : MonoBehaviour
         {
             case "top":
                 _list.Add("Carptin");
-                transform.localScale += new Vector3(0.018f, 0.018f);
                 foreach (var item in _list)
                 {
                     _t1.text = "" + _list.Count;
