@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,14 +22,7 @@ public class Player1Controller : MonoBehaviour
         {
             _player1Sprite.flipX = true;
         }
-        //if (Input.GetAxis("Vertical") > 0)
-        //{
-        //    _player1Sprite.flipY = false;
-        //}
-        //if (Input.GetAxis("Vertical") < 0)
-        //{
-        //    _player1Sprite.flipY = true;
-        //}
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
